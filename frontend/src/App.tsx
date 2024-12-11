@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
-import {api} from './lib/api'
+import { api } from "./lib/api";
 import "./App.css";
-
 
 type Restaurant = {
   id: number;
@@ -45,7 +44,7 @@ function App() {
   }
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="flex flex-col w-full mx-auto px-4 py-8">
       <h1 className="text-3xl font-bold mb-6 text-center">Our Restaurants</h1>
       {restaurants.length === 0 ? (
         <p className="text-center text-gray-500">No restaurants found</p>
